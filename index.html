@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Data.gov by YOTOV-LIMITED</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Data.gov</h1>
+      <h2 class="project-tagline">Data.gov source code and issue tracker</h2>
+      <a href="https://github.com/YOTOV-LIMITED/data.gov" class="btn">View on GitHub</a>
+      <a href="https://github.com/YOTOV-LIMITED/data.gov/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/YOTOV-LIMITED/data.gov/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="datagov" class="anchor" href="#datagov" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data.gov</h1>
+
+<p><a href="http://data.gov">Data.gov</a> is an open data website created by the <a href="https://github.com/GSA/">U.S. General Services Administration</a> that is based on two robust open source projects: <a href="http://ckan.org">CKAN</a> and <a href="http://wordpress.org">WordPress</a>. The data catalog at <a href="https://catalog.data.gov">catalog.data.gov</a> is powered by CKAN, while the content seen at <a href="http://Data.gov">Data.gov</a> is powered by WordPress.  </p>
+
+<p><strong>This repository provides the <a href="https://github.com/GSA/data.gov/issues">issue tracker</a> for all code, bugs, and feature requests related to Data.gov.</strong> Currently the repository is only used for source version control on the code for the WordPress template, but you will also find pointers to the relevant CKAN code and additional resources documented below.</p>
+
+<h3>
+<a id="ckan" class="anchor" href="#ckan" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CKAN</h3>
+
+<ul>
+<li>
+<strong>CKAN.</strong> The Data.gov team recommends the <a href="http://ckan.org/developers/docs-and-download/">latest version of CKAN</a>.</li>
+<li>
+<strong>Data.gov CKAN.</strong> The code powering the Data.gov instance of CKAN. 
+
+<ul>
+<li>
+<a href="https://github.com/GSA/ckan/tree/release-datagov">release-datagov</a> - The main development branch used for the current <a href="https://catalog.data.gov">catalog.data.gov</a>.</li>
+<li>
+<a href="https://github.com/GSA/ckanext-geodatagov">GSA/ckanext-geodatagov</a> - Most data.gov specific CKAN customizations are contained within this extension, but the extension also provides additional geospatial capabilities.<br>
+</li>
+<li>
+<a href="https://github.com/GSA/ckanext-datagovtheme">ckanext-datagovtheme</a> - The CKAN theme for catalog.data.gov</li>
+</ul>
+</li>
+<li>
+<strong>Extensions.</strong> The Data.gov team has developed several CKAN extensions, but these are still in the process of being packaged for more widespread use. The <a href="http://catalog.data.gov/api/util/status">full list of installed extensions can be seen via the CKAN API</a>. Custom extensions include:
+
+<ul>
+<li>
+<a href="https://github.com/GSA/ckanext-datajson">GSA/ckanext-datajson</a> - A CKAN extension for <a href="https://project-open-data.github.io">Project Open Data</a> /data.json harvesting and publishing. </li>
+<li>
+<a href="https://github.com/GSA/USMetadata">GSA/USMetadata</a> - A CKAN extension to support the <a href="https://project-open-data.github.io">Project Open Data</a> metadata schema within the CKAN user interface. </li>
+</ul>
+</li>
+<li>
+<strong>Other Tools</strong><br>
+
+<ul>
+<li>
+<a href="https://github.com/GSA/ckan-php-client">GSA/ckan-php-client</a> - A CKAN php client for Data.gov.</li>
+<li>
+<a href="https://github.com/GSA/ckan-php-manager">GSA/ckan-php-manager</a> - A CKAN php manager for Data.gov.<br>
+</li>
+</ul>
+</li>
+<li>
+<strong>Deployment.</strong> We are in the process of improving documentation and hope to provide build scripts and configurations for tools like <a href="http://www.vagrantup.com/">Vagrant</a> to make setting up the Data.gov CKAN easier for others.<br>
+</li>
+</ul>
+
+<h3>
+<a id="wordpress" class="anchor" href="#wordpress" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>WordPress</h3>
+
+<ul>
+<li>
+<strong>WordPress.</strong> The Data.gov team recommends the <a href="http://wordpress.org/download/">latest version of WordPress</a>.</li>
+<li>
+<strong>Data.gov WordPress template.</strong> The code powering the Data.gov WordPress template.
+
+<ul>
+<li>
+<a href="https://github.com/GSA/data.gov">GSA/data.gov</a> or <em>this repository</em>. The source version control of the Data.gov WordPress template. The theme is provided in the <code>/themes/</code> folder. The theme is based on <a href="http://roots.io/starter-theme/">roots.io</a>.</li>
+</ul>
+</li>
+<li>
+<strong>Plugins.</strong> See the routinely updated <a href="plugins.md">plugins</a> page for a list of all the plugins used on <a href="https://www.data.gov/">Data.gov</a>.
+
+<ul>
+<li>
+<a href="https://github.com/GSA/datagov-custom">GSA/datagov-custom</a> - Most data.gov specific customizations are contained within this extension</li>
+</ul>
+</li>
+<li>
+<strong>Deployment.</strong> Download the <a href="http://wordpress.org/download/">latest version of WordPress</a>. This is a standard WordPress install, so please refer to the <a href="http://codex.wordpress.org/Installing_WordPress">WordPress Docs</a>. In the near future we hope to release the configuration for installing the Data.gov WordPress using <a href="http://wp-cli.org/">WordPress CLI</a>. </li>
+</ul>
+
+<h3>
+<a id="additional-datagov-resources" class="anchor" href="#additional-datagov-resources" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Additional Data.gov Resources</h3>
+
+<ul>
+<li>
+<strong>Data.gov/Developers.</strong>  In addition to this repository, please be sure to look at the Data.gov Developers section for more updates and resources, including information on Data.gov's CKAN API: <a href="http://data.gov/developers/">http://data.gov/developers/</a>
+</li>
+<li>
+<strong>Design.</strong> Design assets for Data.gov.
+
+<ul>
+<li>
+<a href="https://github.com/GSA/datagov-design">GSA/datagov-design</a> - The source graphic files for logo, icons, layout.</li>
+</ul>
+</li>
+<li>
+<strong>Communications.</strong> Communication and publishing systems that power Data.gov.
+
+<ul>
+<li>
+<a href="https://github.com/GSA/idm">GSA/idm</a> - Identity Management for Data.gov and related systems. </li>
+<li>
+<a href="https://github.com/GSA/open311-simple-crm">GSA/open311-simple-crm</a> - A simple CRM application built with the Open311 API. </li>
+</ul>
+</li>
+<li>
+<strong>Harvest Tools.</strong> Tools to support Data.gov harvesting and compliance with the format and metadata schema requirements of Project Open Data. <em>Learn more at <a href="https://project-open-data.cio.gov/">Project Open Data</a>.</em>
+
+<ul>
+<li>
+<a href="https://github.com/GSA/enterprise-data-inventory">GSA/enterprise-data-inventory</a> - A CKAN based enterprise data management system for private and public data management available at <a href="https://inventory.data.gov/">inventory.data.gov</a>.</li>
+<li>
+<a href="https://github.com/GSA/project-open-data-dashboard">GSA/project-open-data-dashboard</a> - An automated dashboard assessing agency and department compliance with Project Open Data.</li>
+</ul>
+</li>
+<li>
+<strong>Style Guide.</strong> A content style guide for Data.gov.
+
+<ul>
+<li>
+<a href="https://github.com/GSA/data.gov-styleguide">GSA/data.gov-styleguide</a> - A Style Guide for prose on Data.gov, heavily inspired by UK.gov's style guide.</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="ways-to-contribute" class="anchor" href="#ways-to-contribute" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ways to Contribute</h2>
+
+<p>We're so glad you're thinking about contributing to Data.gov!</p>
+
+<p>Before contributing to Data.gov we encourage you to read our <a href="https://github.com/GSA/data.gov/blob/master/CONTRIBUTING.md">CONTRIBUTING</a> guide, our <a href="https://github.com/GSA/data.gov/blob/master/LICENSE.md">LICENSE</a>, and our README (you are here), all of which should be in this repository. If you have any questions, you can email the Data.gov team at <a href="mailto:datagov@gsa.gov">datagov@gsa.gov</a>.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/YOTOV-LIMITED/data.gov">Data.gov</a> is maintained by <a href="https://github.com/YOTOV-LIMITED">YOTOV-LIMITED</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
